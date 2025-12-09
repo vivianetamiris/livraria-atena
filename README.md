@@ -1,5 +1,5 @@
 # livraria-atena
-Projeto final desenvolvido junto à disciplina de Linguagem e Técnicas de Programação I, 2025.
+Projeto desenvolvido junto à disciplina de Linguagem e Técnicas de Programação I, 2025, pelos alunos Juliano de Melo Gregório e Viviane Tamíris Pereira, sob a orientação do professor dr. Matheus Eloy Franco.
 
 **Linguagens Utilizadas:**
 C#
