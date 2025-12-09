@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\AtenaLiv\\Livraria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADCD5541-07BA-4C57-90FA-5DC9B4EF5BEF}|Livraria\\Livraria.csproj|C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\AtenaLiv\\Livraria\\livraria\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADCD5541-07BA-4C57-90FA-5DC9B4EF5BEF}|Livraria\\Livraria.csproj|solutionrelative:livraria\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADCD5541-07BA-4C57-90FA-5DC9B4EF5BEF}|Livraria\\Livraria.csproj|c:\\users\\vivia\\onedrive\\documentos\\if\\projetos\\tecnica-programacao\\atenaliv\\livraria\\livraria\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ADCD5541-07BA-4C57-90FA-5DC9B4EF5BEF}|Livraria\\Livraria.csproj|solutionrelative:livraria\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADCD5541-07BA-4C57-90FA-5DC9B4EF5BEF}|Livraria\\Livraria.csproj|c:\\users\\vivia\\onedrive\\documentos\\if\\projetos\\tecnica-programacao\\atenaliv\\livraria\\livraria\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{ADCD5541-07BA-4C57-90FA-5DC9B4EF5BEF}|Livraria\\Livraria.csproj|solutionrelative:livraria\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\AtenaLiv\\Livraria\\Livraria\\LoginForm.cs",
+              "RelativeDocumentMoniker": "Livraria\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\AtenaLiv\\Livraria\\Livraria\\LoginForm.cs [Design]",
+              "RelativeToolTip": "Livraria\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T16:01:52.517Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\AtenaLiv\\Livraria\\Livraria\\MainForm.cs",
+              "RelativeDocumentMoniker": "Livraria\\MainForm.cs",
+              "ToolTip": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\AtenaLiv\\Livraria\\Livraria\\MainForm.cs [Design]",
+              "RelativeToolTip": "Livraria\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T18:30:52.333Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\AtenaLiv\\Livraria\\Livraria\\MainForm.cs",
+              "RelativeDocumentMoniker": "Livraria\\MainForm.cs",
+              "ToolTip": "C:\\Users\\vivia\\OneDrive\\Documentos\\IF\\Projetos\\tecnica-programacao\\AtenaLiv\\Livraria\\Livraria\\MainForm.cs",
+              "RelativeToolTip": "Livraria\\MainForm.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAA0wEIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T04:47:29.779Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
