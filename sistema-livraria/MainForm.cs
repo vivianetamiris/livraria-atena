@@ -3,9 +3,6 @@ using System;
 using System.Data;
 using System.Windows.Forms;
 
-
-
-
 namespace Livraria
 {
     public partial class MainForm : Form
@@ -15,10 +12,7 @@ namespace Livraria
         public MainForm()
         {
             InitializeComponent();
-            btnBuscarAlteracao.UseVisualStyleBackColor = false;
-            btnAtualizarAlteracao.UseVisualStyleBackColor = false;
-            btnLimparAlteracao.UseVisualStyleBackColor = false;
-            btnExcluirAlteracao.UseVisualStyleBackColor = false;
+            
         }
         
 
@@ -128,7 +122,7 @@ namespace Livraria
 
                     cmd.Parameters.AddWithValue("p_id_livro", idLivro);
 
-                    //Parâmetro de saída
+                    
                     MySqlParameter pIdEdicao = new MySqlParameter("p_id_edicao", MySqlDbType.Int32);
                     pIdEdicao.Direction = ParameterDirection.Output;
                     cmd.Parameters.Add(pIdEdicao);
@@ -177,8 +171,6 @@ namespace Livraria
                 MessageBox.Show("Livro e autores cadastrados com sucesso!", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
-
 
         private void gridAutores_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -285,10 +277,10 @@ namespace Livraria
                 case "Título":
                     sql = @"SELECT 
                 l.nome AS `Livro`,
-                l.genero AS `Gênero`,
+                l.genero AS `Genero`,
                 e.editora AS `Editora`,
                 e.ano AS `Ano`,
-                e.preco AS `Preço`,
+                e.preco AS `Preco`,
                 a.nome AS `Autor`
             FROM tb_livro l
             JOIN tb_edicoes e ON e.id_livro = l.id
@@ -300,10 +292,10 @@ namespace Livraria
                 case "Autor":
                     sql = @"SELECT 
                 l.nome AS `Livro`,
-                l.genero AS `Gênero`,
+                l.genero AS `Genero`,
                 e.editora AS `Editora`,
                 e.ano AS `Ano`,
-                e.preco AS `Preço`,
+                e.preco AS `Preco`,
                 a.nome AS `Autor`
             FROM tb_livro l
             JOIN tb_edicoes e ON e.id_livro = l.id
@@ -315,10 +307,10 @@ namespace Livraria
                 case "Gênero":
                     sql = @"SELECT 
                 l.nome AS `Livro`,
-                l.genero AS `Gênero`,
+                l.genero AS `Genero`,
                 e.editora AS `Editora`,
                 e.ano AS `Ano`,
-                e.preco AS `Preço`,
+                e.preco AS `Preco`,
                 a.nome AS `Autor`
             FROM tb_livro l
             JOIN tb_edicoes e ON e.id_livro = l.id
@@ -330,10 +322,10 @@ namespace Livraria
                 case "Editora":
                     sql = @"SELECT 
                 l.nome AS `Livro`,
-                l.genero AS `Gênero`,
+                l.genero AS `Genero`,
                 e.editora AS `Editora`,
                 e.ano AS `Ano`,
-                e.preco AS `Preço`,
+                e.preco AS `Preco`,
                 a.nome AS `Autor`
             FROM tb_livro l
             JOIN tb_edicoes e ON e.id_livro = l.id
@@ -345,10 +337,10 @@ namespace Livraria
                 case "Ano":
                     sql = @"SELECT 
                 l.nome AS `Livro`,
-                l.genero AS `Gênero`,
+                l.genero AS `Genero`,
                 e.editora AS `Editora`,
                 e.ano AS `Ano`,
-                e.preco AS `Preço`,
+                e.preco AS `Preco`,
                 a.nome AS `Autor`
             FROM tb_livro l
             JOIN tb_edicoes e ON e.id_livro = l.id
@@ -481,7 +473,7 @@ namespace Livraria
                     filtro = $"{campo} LIKE CONCAT('%', @valor, '%')";
                     break;
 
-                case "Gênero":   // ✅ NOVO
+                case "Gênero":   
                     campo = "l.genero";
                     filtro = $"{campo} LIKE CONCAT('%', @valor, '%')";
                     break;
@@ -581,7 +573,7 @@ namespace Livraria
                 valor = valor.Replace(",", ".");
             }
 
-            // VALIDAÇÕES
+            
             switch (coluna)
             {
                 case "ISBN":
@@ -610,7 +602,7 @@ namespace Livraria
                     }
                     break;
 
-                case "Genero":   // ✅ NOVO
+                case "Gênero":   
                     if (string.IsNullOrWhiteSpace(valor))
                     {
                         MessageBox.Show("O gênero não pode ficar vazio.");
@@ -644,7 +636,7 @@ namespace Livraria
                     }
                     break;
 
-                case "NumeroEdicao":
+                case "Numero de Edicao":
                     if (!int.TryParse(valor, out int numEdicao) || numEdicao < 1)
                     {
                         MessageBox.Show("Número da edição inválido.");
@@ -652,7 +644,7 @@ namespace Livraria
                     }
                     break;
 
-                case "Preco":
+                case "Preço":
                     if (!decimal.TryParse(valor, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out decimal preco) || preco < 0)
                     {
                         MessageBox.Show("Preço inválido.");
@@ -669,7 +661,7 @@ namespace Livraria
                     return;
             }
 
-            // SQL CORRESPONDENTE À COLUNA
+            
             string sql = "";
 
             switch (coluna)
@@ -799,7 +791,7 @@ namespace Livraria
                 return;
             }
 
-            // Pega o ID 
+            
             string id = gridAlteracoes.SelectedRows[0].Cells["ID"].Value.ToString();
             DialogResult confirm = MessageBox.Show(
                 "Tem certeza que deseja excluir este livro?",
@@ -845,8 +837,7 @@ namespace Livraria
         }
     }
     }
-    
-    
+
 
 
 
